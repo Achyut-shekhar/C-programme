@@ -7,7 +7,7 @@ int main()
     printf("input the string\n");
     gets(s);
     
-    for(i=0;s[i]!=0;i++)
+    for(i=0;s[i]!='\0';i++)
     {
         if(s[i]>='a'&& s[i]<='z')
         {
