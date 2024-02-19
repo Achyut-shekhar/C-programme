@@ -14,7 +14,7 @@ int main()
     printf("enter the no. of elements to be stored in b");
     scanf("%d", &m);
     printf("input array element");
-    for (i = 0; i < n; i++)
+    for (i = 0; i < m; i++)
     {
         scanf("%d", &b[i]);
         c[n + i] = b[i];

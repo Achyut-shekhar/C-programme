@@ -9,7 +9,7 @@ int main()
     {
         scanf("%d", &a[i]);
     }
-    t=0;
+    t=0; 
     for (i = 0; i < n; i++)
     {
         for (j = i + 1; j < n; j++)

@@ -26,8 +26,10 @@ int main()
         {
             printf("not similar");
         }
-        else{
+        else
+        {
             printf("similar");
         }
     }
+    return 0;
 }
