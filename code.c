@@ -12,17 +12,16 @@ int main()
          str[l1+1]='\0';
         i=0;
         while(str[i] != '\0')
+    { while(str[i]==' ')
     {
-        /* If the current character(str[i]) is white space */
-        if(str[i]==' ' || str[i]=='\n' || str[i]=='\t')
-        {
-            words++;
-        }
-
+        t++;
         i++;
+        break;
+    }
+        
     }
 
-    printf("Total number of words = %d", words);
+    printf("Total number of words = %d", t);
 
     return 0;
     
