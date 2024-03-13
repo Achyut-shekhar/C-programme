@@ -1,28 +1,26 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
+
+/* Function Prototype*/
+
+
+/* Main Function */
 int main()
-{
-        char str[30];
-        int i,n,l1,t,words;
-        printf("input string\n");
-         fgets(str,30,stdin);
-         l1=strlen(str);
-         printf("length is %d\n",l1);
-         str[l1]=' ';
-         str[l1+1]='\0';
-        i=0;
-        while(str[i] != '\0')
-    { while(str[i]==' ')
-    {
-        t++;
-        i++;
-        break;
-    }
+{int i,j,l=0,u=0,len,x;
+    char str[40];
+    printf("input the string");
+    fgets(str,40,stdin);
+    len=strlen(str);
+  i = 0;
+    while (str[i] != '\0') {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            u++;
+        }
+        else if (str[i] >= 'a' && str[i] <= 'z') {
+            l++;
+        }
         
+        i++;
     }
-
-    printf("Total number of words = %d", t);
-
-    return 0;
-    
+    printf("%d %d",u,l);
 }
