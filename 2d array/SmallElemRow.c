@@ -9,12 +9,13 @@ int main()
     for (i = 0; i < m; i++)
     {
         for (j = 0; j < n; j++)
-            scanf("%d\t", &a[i][j]);
+            scanf("%d", &a[i][j]);
         printf("\n");
     }
-    int t = a[0][0], k;
+   int k;
     for (i = 0; i < m; i++)
-    {
+    {  
+   int t = a[i][0]; 
         for (j = 0; j < n; j++)
         {
             if ( a[i][j]<t)
@@ -24,6 +25,7 @@ int main()
             }
             
         }
-        printf("%d",t);
+      printf("%d",t);
     }
+      
 }
