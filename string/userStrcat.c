@@ -8,7 +8,7 @@ int main()
     fgets(s, 20, stdin);
     fgets(a, 20, stdin);
      l1=strlen(s);
-     s[l1-1]=' ';
+     s[l1-1]=' '; //to remove \n//
     
  /* Concatenating second string to first string */
  for(i=0;a[i]!='\0';i++)

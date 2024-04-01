@@ -4,9 +4,10 @@ int main()
 {
     char s[20];
     int i,j,t=0,l;
-    printf("input the string");
+    printf("input the string\n");
     fgets(s,20,stdin);
     l=strlen(s);
+    printf("%d",l);
     l=l-1;
     for(i=0,j=l-1;i<j;i++,j--)
     {

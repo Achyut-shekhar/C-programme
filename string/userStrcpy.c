@@ -10,6 +10,7 @@ int main(){
         a[i]=s[i];
         i++;
    }
+   a[i]='\0';
    
    puts(a);
 

@@ -25,7 +25,7 @@ int main()
             }
             
         }
-      printf("%d",t);
+      printf("%d\t",t);
     }
       
 }

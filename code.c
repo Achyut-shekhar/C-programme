@@ -1,26 +1,14 @@
 #include<stdio.h>
-#include<string.h>
-
-/* Function Prototype*/
-
-
-/* Main Function */
-int main()
-{int i,j,l=0,u=0,len,x;
-    char str[40];
-    printf("input the string");
-    fgets(str,40,stdin);
-    len=strlen(str);
-  i = 0;
-    while (str[i] != '\0') {
-        if (str[i] >= 'A' && str[i] <= 'Z') {
-            u++;
-        }
-        else if (str[i] >= 'a' && str[i] <= 'z') {
-            l++;
-        }
-        
-        i++;
-    }
-    printf("%d %d",u,l);
+void main()
+{ int A[10]={1,2,3,4};
+  static int a,b,i;
+for(i=0;i<10;++i)
+{
+    if(A[i]%2==0 && A[i]%5==0)
+       ++a;
+       else
+       ++b;
+}
+printf("%d\t%d\t%d\t",a,b,a-b);
+    
 }
