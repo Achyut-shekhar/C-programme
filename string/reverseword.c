@@ -7,7 +7,7 @@ int main()
         printf("input string\n");
         fgets(str, 30, stdin);
         l=strlen(str);
-        for(i=0;i<l/2;i++)
+        for(i=0;i< l/2;i++)
         {
              temp=str[i];
              str[i]=str[l-i-1];

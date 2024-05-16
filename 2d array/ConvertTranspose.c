@@ -2,16 +2,9 @@
 int main()
 {
     int a[3][3]={{1,2,3},{4,5,6},{7,8,9}},i,j,sum=0;
-    // printf("input the row and column of 2d array\n");
-    // for(i=0;i<3;i++)
-    // {
-    //     for(j=0;j<3;j++)
-    //     {
-    //         scanf("%d",&a[i][j]);
-    //     }
-    // }
+    //transpose
     for(i=0;i<3;i++)
-    {  
+    {  //in this we took j=i because if we are taking j=0 it will swap its self twice and make a same matrix//
          for(j=i;j<3;j++)
         {
             if(i!=j){
