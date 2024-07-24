@@ -10,7 +10,7 @@ int main()
     {scanf("%d", &a[i]);
     }
     
-    for(i=0;i<n;i++)
+    for(i=0;i<n;i++)      //this will convert in descending order
     {
         for(j=0;j<n;j++)
         {
@@ -22,8 +22,32 @@ int main()
                 
             }
         }
-        
-        
+    }
+     for(i=0;i<n;i++)      //this will convert in ascending order
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]>a[j])
+            {
+                res=a[i];
+                a[i]=a[j];
+                a[j]=res;
+                
+            }
+        }
+    }
+     for(i=0;i<n;i++)     //bubble sort this will convert descending order
+    {
+        for(j=0;j<n-i-1;j++)
+        {
+            if(a[j]<a[j+1])
+            {
+                res=a[j];
+                a[j]=a[j+1];
+                a[j+1]=res;
+                
+            }
+        }
     }
 
       for(i = 0; i< n ; i++)  
